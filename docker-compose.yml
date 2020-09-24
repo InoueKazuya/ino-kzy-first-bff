@@ -1,0 +1,7 @@
+version: "3" 
+services:
+  bff:
+    build: .
+    ports:
+      - "8443:8443"
+    tty: true
