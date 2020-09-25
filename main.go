@@ -12,7 +12,7 @@ func main() {
 }
 
 func handler (writer http.ResponseWriter, request *http.Request) {
-	resp,err := http.Get("10.146.0.6:8080/hello");
+	resp,err := http.Get("http://10.146.0.6:8080/hello");
 	if err != nil {
 		// error handling
 	};
