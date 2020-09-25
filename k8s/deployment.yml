@@ -19,7 +19,7 @@ metadata:
   labels:
     app: on-boarding-bff
 spec:
-  replicas: 3
+  replicas: 2
   template:
     metadata:
       labels:
@@ -27,7 +27,7 @@ spec:
     spec:
       containers:
         - name: on-boarding-bff
-          image: gcr.io/be-inoue-kazuya/ino-kzy-first-application:latest
+          image: gcr.io/be-inoue-kazuya/ino-kzy-first-bff:latest
           imagePullPolicy: Always
           ports:
             - containerPort: 8443

@@ -4,5 +4,5 @@ RUN go install on-boarding-bff
 
 FROM alpine:latest
 COPY --from=0 /go/bin/on-boarding-bff .
-ENV PORT 8080
+ENV PORT 8443
 CMD ["./on-boarding-bff"]
